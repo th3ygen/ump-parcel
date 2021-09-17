@@ -1,0 +1,60 @@
+/*
+    author: JOACHIM A/L AGOSTAIN CA20017
+    MODULE 2
+*/
+/* CSS Document */
+
+.blackbox {
+  border: 1px solid #ebebeb;
+  padding: 0px;
+}
+
+.gentxt {
+  font-size: 16px;
+  text-transform: none;
+  color: black;
+  font-style: normal;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.newtext {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  color: black;
+}
+
+.sectext {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 18px;
+  color: black;
+}
+.redtext {
+  font-family: sans-serif, arial, helvetica;
+  font-size: 14px;
+  color: #ff0000;
+}
+
+input.text {
+  width: 200px;
+  border: 1px groove #6c7d8e;
+  padding: 1px 1px 1px 3px;
+}
+
+h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 11px;
+}
+.paratext {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #242424;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.Partext1 {
+  font-size: 12px;
+  line-height: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+}

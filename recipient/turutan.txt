@@ -1,0 +1,6 @@
+1)goodlist1.php(view all data)
+2)goodlist2.php(view data bila status='collected'
+3)receives.php(update)
+(akan update status->received dgn update dateArrived)
+
+4)REPORT.php(view list parcel),(search function),(graf)

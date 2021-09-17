@@ -1,0 +1,264 @@
+/* 
+    author: MUHAMMAD AIDIL SYAZWAN BIN HAMDAN CA19144
+    MODULE 1
+*/
+* {
+  transition: 0.3s all;
+}
+
+.wrappers {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #f2f2f2;
+}
+
+.stripes {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  height: 100vh;
+  width: 100%;
+
+  & > .grp-1 {
+    position: absolute;
+    left: -10%;
+    bottom: -30%;
+    background: orange;
+    width: 500vh;
+    height: 20vw;
+		min-height: 200px;
+
+		transform-origin: left;
+		transform: rotateZ(-40deg);
+
+		& > div {
+			&:nth-child(1) {
+				height: 30%;
+				background: #11ADA4;
+			}
+			&:nth-child(2) {
+				height: 60%;
+				background: #0958A3;
+			}
+			&:nth-child(3) {
+				height: 10%;
+				background: #FCDA37;
+			}
+		}
+  }
+
+	& > .stripe-1 {
+		position: absolute;
+    left: 50%;
+    bottom: -30%;
+    width: 400vh;
+    height: 5vw;
+		min-height: 100px;
+
+		background: #11ADA4;
+
+		transform-origin: left;
+		transform: rotateZ(-40deg);
+	}
+}
+
+.box {
+  position: relative;
+
+  padding: 60px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 30px 1px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  gap: 50px;
+
+  width: 1100px;
+  height: fit-content;
+
+  background: #fff;
+
+  & > .logo {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+
+    & > img {
+      height: 80px;
+    }
+  }
+
+  & > section {
+    &.svg {
+      width: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding: 50px 0;
+    }
+
+    flex: 1 1 100%;
+
+    &.login {
+      flex: 1 0 400px;
+    }
+  }
+}
+
+.login {
+  & > .heading {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    & > h1 {
+      font-weight: 600;
+      font-size: 2rem;
+    }
+    & > h4 {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+  }
+
+  & > .body {
+    width: 300px;
+  }
+
+  & .creds {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 30px;
+
+    width: 100%;
+    background: #eeeeee;
+
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
+
+    & > .input {
+      position: relative;
+
+      width: 100%;
+      padding: 15px 0;
+      padding-bottom: 5px;
+
+      & > label,
+      i {
+        position: absolute;
+        pointer-events: none;
+        color: #bfbfbf;
+      }
+
+      & > label {
+        top: 50%;
+        left: 60px;
+        font-size: 0.85rem;
+        transform: translateY(-50%);
+
+        &.focus {
+          top: 0;
+          transform: translateY(0%);
+          font-size: 0.7rem;
+        }
+      }
+
+      & > i {
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+      }
+
+      & > input {
+        margin-left: 60px;
+        width: calc(100% - 60px);
+        padding: 3px 0;
+        background: transparent;
+        border: none;
+
+        font-size: 0.9rem;
+
+        &:focus {
+          outline: none;
+        }
+        &:-webkit-autofill {
+          -webkit-box-shadow: 0 0 0 30px #eeeeee inset !important;
+        }
+
+        &:nth-child(2) {
+          &:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 30px white inset !important;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        background: #fff;
+      }
+    }
+  }
+
+  & .sideactions {
+    padding: 0 8px;
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    & > .action {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      & > label,
+      a {
+        font-size: 0.8rem;
+        color: #bfbfbf;
+
+        & a {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  & .actions {
+    margin-top: 30px;
+
+    display: flex;
+    gap: 20px;
+
+    align-items: center;
+
+    & > input, a {
+      padding: 5px 15px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.25);
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #11ada4;
+
+      border: none;
+
+      &.btn-login {
+        background: #11ada4;
+        font-weight: 300;
+        color: white;
+        padding: 5px 50px;
+      }
+
+      cursor: pointer;
+    }
+
+    & > span {
+      color: #bfbfbf;
+    }
+  }
+}

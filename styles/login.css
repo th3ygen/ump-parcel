@@ -1,0 +1,214 @@
+/* 
+    author: MUHAMMAD AIDIL SYAZWAN BIN HAMDAN CA19144
+    MODULE 1
+*/
+* {
+  transition: 0.3s all;
+}
+
+.wrappers {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f2f2f2;
+}
+
+.stripes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+}
+.stripes > .grp-1 {
+  position: absolute;
+  left: -10%;
+  bottom: -30%;
+  background: orange;
+  width: 500vh;
+  height: 20vw;
+  min-height: 200px;
+  transform-origin: left;
+  transform: rotateZ(-40deg);
+}
+.stripes > .grp-1 > div:nth-child(1) {
+  height: 30%;
+  background: #11ADA4;
+}
+.stripes > .grp-1 > div:nth-child(2) {
+  height: 60%;
+  background: #0958A3;
+}
+.stripes > .grp-1 > div:nth-child(3) {
+  height: 10%;
+  background: #FCDA37;
+}
+.stripes > .stripe-1 {
+  position: absolute;
+  left: 50%;
+  bottom: -30%;
+  width: 400vh;
+  height: 5vw;
+  min-height: 100px;
+  background: #11ADA4;
+  transform-origin: left;
+  transform: rotateZ(-40deg);
+}
+
+.box {
+  position: relative;
+  padding: 60px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 30px 1px rgba(0, 0, 0, 0.15);
+  display: flex;
+  gap: 50px;
+  width: 1100px;
+  height: fit-content;
+  background: #fff;
+}
+.box > .logo {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.box > .logo > img {
+  height: 80px;
+}
+.box > section {
+  flex: 1 1 100%;
+}
+.box > section.svg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+.box > section.login {
+  flex: 1 0 400px;
+}
+
+.login > .heading {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.login > .heading > h1 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+.login > .heading > h4 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.login > .body {
+  width: 300px;
+}
+.login .creds {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 100%;
+  background: #eeeeee;
+  border-radius: 8px;
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.login .creds > .input {
+  position: relative;
+  width: 100%;
+  padding: 15px 0;
+  padding-bottom: 5px;
+}
+.login .creds > .input > label,
+.login .creds > .input i {
+  position: absolute;
+  pointer-events: none;
+  color: #bfbfbf;
+}
+.login .creds > .input > label {
+  top: 50%;
+  left: 60px;
+  font-size: 0.85rem;
+  transform: translateY(-50%);
+}
+.login .creds > .input > label.focus {
+  top: 0;
+  transform: translateY(0%);
+  font-size: 0.7rem;
+}
+.login .creds > .input > i {
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+.login .creds > .input > input {
+  margin-left: 60px;
+  width: calc(100% - 60px);
+  padding: 3px 0;
+  background: transparent;
+  border: none;
+  font-size: 0.9rem;
+}
+.login .creds > .input > input:focus {
+  outline: none;
+}
+.login .creds > .input > input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #eeeeee inset !important;
+}
+.login .creds > .input > input:nth-child(2):-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+.login .creds > .input:nth-child(2) {
+  background: #fff;
+}
+.login .sideactions {
+  padding: 0 8px;
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.login .sideactions > .action {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.login .sideactions > .action > label,
+.login .sideactions > .action a {
+  font-size: 0.8rem;
+  color: #bfbfbf;
+}
+.login .sideactions > .action > label a,
+.login .sideactions > .action a a {
+  text-decoration: underline;
+}
+.login .actions {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.login .actions > input, .login .actions a {
+  padding: 5px 15px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #11ada4;
+  border: none;
+  cursor: pointer;
+}
+.login .actions > input.btn-login, .login .actions a.btn-login {
+  background: #11ada4;
+  font-weight: 300;
+  color: white;
+  padding: 5px 50px;
+}
+.login .actions > span {
+  color: #bfbfbf;
+}
+
+/*# sourceMappingURL=login.css.map */

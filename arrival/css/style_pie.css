@@ -1,0 +1,52 @@
+/*
+    author: JOACHIM A/L AGOSTAIN CA20017
+    MODULE 2
+*/
+.total-input {
+  background-color: #3546b0;
+  border: none;
+  color: white;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+  background-color: #0a1133;
+  opacity: 1;
+}
+
+.active-input {
+  background-color: #fcda37;
+  border: none;
+  color: white;
+}
+
+.arrival-input {
+  background-color: #ff4500;
+  border: none;
+  color: white;
+}
+
+.collected-input {
+  background-color: #7cfc00;
+  border: none;
+  color: white;
+}
+
+.form-control:focus {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.input-block {
+  font-size: 15px;
+}
+
+.input-block input {
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 0.8em;
+  outline: 0;
+  margin-left: 16px;
+}

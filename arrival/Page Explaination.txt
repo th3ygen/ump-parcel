@@ -1,0 +1,26 @@
+Goods Arrival (Database name: arrival)
+
+1) dbase.php - (Arrival Database)
+2) index.php - (To show Arrival Details)
+3) fill-in.php - (To insert data of enter.php into database)
+4) enter.php - (Interface of insert data)
+5) edit.php - (Interface of update data)
+6) delete.php - (To delete one particular data from database)
+7) update.php - (To update data of edit.php into database)
+
+Track Parcel (track_parcel.php) --> Track Information (trackdata.php)
+
+Report List (Database name: demo)
+
+1) report_config.php - (Report Database)
+2) report_index.php (Display Parcel Record Details)
+3) report_create.php - (Create parcel record from database)
+4) report_delete.php - (Delete parcel record from database)
+5) report_error.php - (Error notify message)
+6) report_update -(Update data of parcel record in database)
+7) report_view.php - (View parcel report details) 
+
+Status Pie Chart (Enter value on the input box to view the Data in visualize Graph (Pie Chart)
+
+Statistics and Statistics Counts
+(Sorry friends I can't linked the statistics with the database)

@@ -1,0 +1,292 @@
+/* 
+    author: JOACHIM A/L AGOSTAIN CA20017
+    MODULE 2
+*/
+
+/* Form style index, edit, enter, update */
+.container1 {
+  border-radius: 5px;
+  background-color: #d7f2f8;
+  padding: 20px;
+}
+
+.lia {
+  float: left;
+}
+.lia a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.lia a:hover:not(.active) {
+  background-color: rgb(92, 90, 90);
+}
+.search-box {
+  float: right;
+  margin: 20px 0;
+  padding: 0;
+}
+.search-box input {
+  padding: 10px;
+  height: 30px;
+  box-sizing: border-box;
+  color: #444;
+}
+.search-box input:focus {
+  outline: 1px solid #333;
+}
+.search-box button {
+  height: 30px;
+  background-color: #333;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  color: #f9f9f9;
+  cursor: pointer;
+}
+.order-list {
+  clear: both;
+  width: 80vw;
+  margin: 10px auto 50px auto;
+  font-family: "Trebuchet MS", "Arial", sans-serif;
+}
+.order-list .header {
+  clear: both;
+  width: 100%;
+  background-color: #333;
+  border-radius: 2px;
+  margin-bottom: 15px;
+  letter-spacing: 0.2px;
+  box-shadow: 3px 3px 5px #ccc;
+}
+.header .hdr-item {
+  width: 15%;
+  display: inline-block;
+  text-align: center;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  color: #fff;
+}
+.list-item {
+  color: #444;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 5px 0;
+  margin-bottom: 8px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  box-shadow: 3px 3px 5px #ccc;
+}
+.list-item:hover {
+  box-shadow: 6px 6px 10px #ccc;
+  z-index: 100;
+}
+.list-col {
+  display: inline-block;
+  width: 15%;
+  text-align: center;
+  padding: 15px 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+.list-col-icon {
+  display: inline-block;
+}
+.not {
+  color: #e78200;
+}
+.yeah {
+  color: #0f0;
+}
+.status {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+}
+.status button {
+  color: #fff;
+  border: none;
+  outline: none;
+  background-color: #333;
+  font-family: "Trebuchet MS", "Arial", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  background-color: #f9f9f9;
+  left: 20px;
+  width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown li {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  color: #444;
+  padding: 5px 5px;
+  cursor: pointer;
+}
+.dropdown li:hover {
+  background-color: #f1f1f1;
+}
+.show_dropdown {
+  display: block;
+}
+.fa-edit {
+  margin-right: 5px;
+  color: green;
+  font-size: 16px;
+}
+.fa-trash {
+  color: rgba(253, 18, 18, 0.884);
+  font-size: 16px;
+}
+.icon-style {
+  text-decoration: none;
+}
+.fa-user-check {
+  font-size: 14px;
+  color: green;
+}
+.fa-user-times {
+  font-size: 14px;
+  color: rgba(253, 18, 18, 0.884);
+}
+.active-link {
+  color: #e78200;
+}
+.list-item::selection {
+  background-color: transparent;
+}
+.header::selection {
+  background-color: transparent;
+}
+
+footer {
+  background-color: #333;
+  padding: 1px;
+  text-align: center;
+  color: white;
+}
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.sidebar-nav {
+  display: block;
+  float: left;
+  width: 200px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#page-content-wrapper {
+  padding-left: 0;
+  margin-left: 0;
+  width: 100%;
+  height: auto;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: #11ada4;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: #0a1133;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/* .greenText{
+    color: #0f0;
+    background-color: greenyellow;
+  }
+  .redText{
+    color: red;
+    background-color: red;
+  } */
+div.k2v {
+  width: 7%;
+  height: 40px;
+  margin-left: 1063px;
+  padding: 10px 20px;
+  border: 1px solid #11ada4;
+  background-color: #0a1133;
+  border-radius: 4px;
+  /* resize: vertical; */
+}
+div.k2v > a {
+  color: white;
+  text-decoration: none;
+}
+div.p2v {
+  width: 10%;
+  height: 40px;
+  margin-left: 560px;
+  padding: 10px 20px;
+  border: 1px solid rgb(122, 224, 63);
+  background-color: #45a049;
+  border-radius: 4px;
+  /* resize: vertical; */
+}
+div.p2v > a {
+  color: white;
+  text-decoration: none;
+}
